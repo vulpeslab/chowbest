@@ -1,0 +1,43 @@
+
+{
+  "jfagbemi": {
+    "authInfo": {
+      "uuid": "JoDKzb6gzVe",
+      "priority": "chow-usr-00",
+      "username": "jfagbemi",
+      "secureKey": "YXV0aD0weCxqZmFnYmVtaSxLZWVwR29pbmcw"
+    },
+    "accVariables": {
+      "chowBalance": 0,
+      "pin": 1234
+    },
+    "accInfo": {
+      "firstName": "Jacob",
+      "middleName": "Ibitimi",
+      "lastName":"Fagbemi",
+      "matricNo": "LCU/UG/22/17635",
+      "emailAddr": "jfagbemi@vulpeslabs",
+      "nxtFunding": "2024-05-27T00:00:00.000Z"
+    }
+  },
+  "eadebayo": {
+    "authInfo": {
+      "uuid": "HxX11d3ErgE",
+      "priority": "chow-usr-01",
+      "username": "eadebayo",
+      "secureKey": "YXV0aD0weCxlYWRlYmF5byxGdWNrYm95MDE="
+    },
+    "accVariables": {
+      "chowBalance": 0,
+      "pin": 1234
+    },
+    "accInfo": {
+      "firstName": "Emmanuel",
+      "middleName": "Boluwatife",
+      "lastName":"Adebayo",
+      "matricNo": "LCU/UG/21/13882",
+      "emailAddr": "eadebayo@vulpeslabs",
+      "nxtFunding": "2024-06-03T00:00:00.000Z"
+    }
+  }
+}
