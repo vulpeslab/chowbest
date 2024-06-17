@@ -122,5 +122,46 @@ function generateTransactionCards() {
     }
 }
 
+const contentContainer = document.getElementById('deliveryContainer');
+let isPulling = false;
+let startY = null;
+
+contentContainer.addEventListener('touchstart', (event) => {
+  startY = event.touches[0].pageY;
+});
+
+contentContainer.addEventListener('touchmove', (event) => {
+  if (!isPulling && startY) {
+    const currentY = event.touches[0].pageY;
+    const deltaY = currentY - startY;
+    if (deltaY > 50) { // Threshold for pull distance
+      isPulling = true;
+      contentContainer.classList.add('pulling'); // Add CSS class for visual feedback
+    }
+  }
+});
+
+contentContainer.addEventListener('touchend', () => {
+  function getRefreshContent() {
+    setTimeout(() => {
+      document.getElementById('deliveryContainer').classList.remove('hidden');
+      document.getElementById('suspenseContainer').classList.add('hidden');
+    }, 2000);
+  }
+
+  if (isPulling) {
+    isPulling = false;
+    contentContainer.classList.remove('pulling');
+    // Simulate fetching new content (replace with your AJAX call)
+    setTimeout(() => {
+        document.getElementById('deliveryContainer').classList.add('hidden');
+        document.getElementById('suspenseContainer').classList.remove('hidden');
+
+        getRefreshContent();
+    }, 1000); // Simulate delay
+  }
+  startY = null;
+});
+
 // Example usage
 generateTransactionCards(); // Generates and appends transaction cards
