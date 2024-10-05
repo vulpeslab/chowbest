@@ -179,10 +179,10 @@ exitOrder.addEventListener("click", () => {
 scanQRButton.addEventListener("click", () => {
     usrAmount = orderInput.value;
     
-    if (usrAmount > 6000) {
+    if (usrAmount > 80000) {
         orderInput.value = '';
-        useModalState("Attention", "You can only spend 6000 per transaction!");
-        console.error("Cannot be more than 6000");
+        useModalState("Attention", "You can only spend 80000 per transaction!");
+        console.error("Cannot be more than 80000");
     } else if (usrAmount < 10) {
         orderInput.value = '';
         useModalState("Attention", "Enter an amount greater than 10");
