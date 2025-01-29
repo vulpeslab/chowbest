@@ -1,25 +1,25 @@
 const dummyTransactions = [
     {
         "refID": "#63415b0046784dfbdfb8415b",
-        "dateAtYear": "Sun Jan 26 2024 at 13:50:31",
+        "dateAtYear": "Sun Jan 26 2025 at 13:50:31",
         "venue": "Cresta",
         "amount": 1000
     },
     {
         "refID": "#63b5f3bf9e9c4f23401b7cd9",
-        "dateAtYear": "Sun Jan 26 2024 at 12:49:16",
+        "dateAtYear": "Sun Jan 26 2025 at 12:49:16",
         "venue": "Tasty Vine Kitchen",
         "amount": 1300
     },
     {
         "refID": "#63a2b4c5d6e7f8a9b0c1d2e3",
-        "dateAtYear": "Sat Jan 25 2024 at 11:30:00",
+        "dateAtYear": "Sat Jan 25 2025 at 11:30:00",
         "venue": "Marigold Kitchen",
         "amount": 1800
     },
     {
         "refID": "#63f4e5d6c7b8a9d0e1f2a3b4",
-        "dateAtYear": "Fri Jan 24 2024 at 15:45:20",
+        "dateAtYear": "Fri Jan 24 2025 at 15:45:20",
         "venue": "Tasty Delight",
         "amount": 2200
     },
