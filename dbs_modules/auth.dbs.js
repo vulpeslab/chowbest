@@ -1,7 +1,7 @@
 
 async function fetchData() {
   try {
-    const response = await fetch("https://vulpeslab.github.io/chowbase/auth/collect.json");
+    const response = await fetch("https://vulpeslab.github.io/chowbase/auth/collection.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
